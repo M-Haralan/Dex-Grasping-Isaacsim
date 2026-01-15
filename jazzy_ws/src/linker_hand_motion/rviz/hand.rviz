@@ -1,0 +1,16 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+
+Visualization Manager:
+  Fixed Frame: base_link
+
+Displays:
+  - Name: RobotModel
+    Class: rviz_default_plugins/RobotModel
+    Enabled: true
+    Robot Description: robot_description
+
+  - Name: TF
+    Class: rviz_default_plugins/TF
+    Enabled: true

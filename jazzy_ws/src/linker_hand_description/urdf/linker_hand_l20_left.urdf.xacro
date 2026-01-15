@@ -2,8 +2,6 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="linker_hand">
 
     <!-- Import urdf file -->
-    <xacro:include filename="$(find linker_hand_description)/urdf/linker_hand_l20_left.urdf.xacro">
-        <xacro:arg name="mesh_prefix" value="package://linker_hand_description/urdf"/>
-    </xacro:include>
+    <xacro:include filename="$(find linker_hand_description)/urdf/linker_hand_l20_left.urdf"/>
 
 </robot>

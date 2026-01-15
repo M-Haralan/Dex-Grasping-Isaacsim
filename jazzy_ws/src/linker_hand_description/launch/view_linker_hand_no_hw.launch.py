@@ -33,10 +33,10 @@ def launch_setup(context, *args, **kwargs):
         [FindPackageShare(description_package), "rviz", "view_linker_hand.rviz"]
     )
 
-    joint_state_publisher_node = Node(
-        package="joint_state_publisher",
-        executable="joint_state_publisher",
-    )
+    # joint_state_publisher_node = Node(
+    #     package="joint_state_publisher",
+    #     executable="joint_state_publisher",
+    # )
 
     robot_state_publisher_node = Node(
         package="robot_state_publisher",
@@ -62,7 +62,7 @@ def launch_setup(context, *args, **kwargs):
     )
 
     nodes_to_start = [
-        joint_state_publisher_node,
+        # joint_state_publisher_node,
         robot_state_publisher_node,
         rviz_node,
         exit_event_handler

@@ -1,0 +1,292 @@
+format: "xrdf"
+
+format_version: 1.0
+
+default_joint_positions: 
+  joint1: -1e-04
+  joint2: -0.0119
+  joint3: -0.0
+  joint4: -0.0016
+  joint5: 0.0
+  joint6: 0.0081
+  joint7: 0.1035
+  index_joint0: -0.0
+  little_joint0: -0.0
+  middle_joint0: -0.0
+  ring_joint0: -0.0
+  thumb_joint0: -0.0049
+  index_joint1: 0.0013
+  little_joint1: 0.0003
+  middle_joint1: 0.001
+  ring_joint1: 0.0008
+  thumb_joint1: 0.122
+  index_joint2: 0.0
+  little_joint2: 0.0
+  middle_joint2: 0.0
+  ring_joint2: -0.0
+  thumb_joint2: -1e-04
+  index_joint3: 0.5322
+  little_joint3: 0.5432
+  middle_joint3: 0.5335
+  ring_joint3: 0.5377
+  thumb_joint3: 0.0
+  thumb_joint4: 0.7236
+
+cspace: 
+  joint_names: 
+    - "joint1"
+    - "joint2"
+    - "joint3"
+    - "joint4"
+    - "joint5"
+    - "joint6"
+    - "joint7"
+  acceleration_limits: [10, 10, 10, 10, 10, 10, 10]
+  jerk_limits: [10000, 10000, 10000, 10000, 10000, 10000, 10000]
+
+collision: 
+  geometry: "auto_generated_collision_sphere_group"
+
+self_collision: 
+  geometry: "auto_generated_collision_sphere_group"
+  ignore: 
+    world: 
+      - "link1"
+    link1: 
+      - "link2"
+    link2: 
+      - "link3"
+    link3: 
+      - "link4"
+    link4: 
+      - "link5"
+    link5: 
+      - "link6"
+    link6: 
+      - "link7"
+    link7: 
+      - "linker_hand_base"
+    linker_hand_base: 
+      - "hand_base_link"
+    hand_base_link: 
+      - "index_link0"
+      - "little_link0"
+      - "middle_link0"
+      - "ring_link0"
+      - "thumb_link0"
+    index_link0: 
+      - "index_link1"
+      - "little_link0"
+      - "middle_link0"
+      - "ring_link0"
+      - "thumb_link0"
+    index_link1: 
+      - "index_link2"
+    index_link2: 
+      - "index_link3"
+    index_link3: 
+      - "index_link4"
+    little_link0: 
+      - "little_link1"
+      - "middle_link0"
+      - "ring_link0"
+      - "thumb_link0"
+    little_link1: 
+      - "little_link2"
+    little_link2: 
+      - "little_link3"
+    little_link3: 
+      - "little_link4"
+    middle_link0: 
+      - "middle_link1"
+      - "ring_link0"
+      - "thumb_link0"
+    middle_link1: 
+      - "middle_link2"
+    middle_link2: 
+      - "middle_link3"
+    middle_link3: 
+      - "middle_link4"
+    ring_link0: 
+      - "ring_link1"
+      - "thumb_link0"
+    ring_link1: 
+      - "ring_link2"
+    ring_link2: 
+      - "ring_link3"
+    ring_link3: 
+      - "ring_link4"
+    thumb_link0: 
+      - "thumb_link1"
+    thumb_link1: 
+      - "thumb_link2"
+    thumb_link2: 
+      - "thumb_link3"
+    thumb_link3: 
+      - "thumb_link4"
+    thumb_link4: 
+      - "thumb_link5"
+
+geometry: 
+  auto_generated_collision_sphere_group: 
+    spheres: 
+      linker_hand_l20_left_isaac_sim/hand_base_link: 
+        - center: [-0.006, -0.023, 0.078]
+          radius: 0.0326
+        - center: [-0.004, 0.033, 0.07]
+          radius: 0.0326
+        - center: [-0.017, -0.025, 0.132]
+          radius: 0.0326
+        - center: [-0.018, -0.02, 0.101]
+          radius: 0.0318
+        - center: [-0.017, 0.035, 0.132]
+          radius: 0.0318
+        - center: [-0.002, 0.013, 0.069]
+          radius: 0.0318
+        - center: [-0.012, -0.012, 0.028]
+          radius: 0.031
+        - center: [-0.009, 0.04, 0.097]
+          radius: 0.031
+        - center: [0.007, 0.012, 0.029]
+          radius: 0.031
+        - center: [-0.015, 0.009, 0.132]
+          radius: 0.031
+        - center: [-0.01, 0.009, 0.105]
+          radius: 0.0318
+      linker_hand_l20_left_isaac_sim/index_link0: 
+        - center: [0.005, 0.007, -0.001]
+          radius: 0.011
+      linker_hand_l20_left_isaac_sim/index_link3: 
+        - center: [-0.008, 0.004, 0.017]
+          radius: 0.013
+      linker_hand_l20_left_isaac_sim/index_link1: 
+        - center: [0.001, 0.005, 0.034]
+          radius: 0.011
+        - center: [0.002, 0.005, 0.014]
+          radius: 0.011
+      linker_hand_l20_left_isaac_sim/little_link1: 
+        - center: [0.0, -0.001, 0.0]
+          radius: 0.011
+        - center: [-0.002, 0.006, 0.014]
+          radius: 0.011
+        - center: [0.001, 0.006, 0.033]
+          radius: 0.011
+      linker_hand_l20_left_isaac_sim/little_link3: 
+        - center: [-0.009, 0.006, 0.018]
+          radius: 0.013
+      linker_hand_l20_left_isaac_sim/middle_link1: 
+        - center: [0.0, 0.005, 0.031]
+          radius: 0.011
+        - center: [-0.001, 0.004, 0.014]
+          radius: 0.011
+      linker_hand_l20_left_isaac_sim/middle_link3: 
+        - center: [-0.008, 0.005, 0.017]
+          radius: 0.013
+      linker_hand_l20_left_isaac_sim/ring_link1: 
+        - center: [0.002, 0.005, 0.03]
+          radius: 0.011
+        - center: [0.0, 0.005, 0.014]
+          radius: 0.011
+      linker_hand_l20_left_isaac_sim/ring_link3: 
+        - center: [-0.008, 0.007, 0.017]
+          radius: 0.013
+      linker_hand_l20_left_isaac_sim/thumb_link2: 
+        - center: [-0.013, -0.015, 0.014]
+          radius: 0.0231
+        - center: [-0.019, 0.0, 0.005]
+          radius: 0.0231
+        - center: [-0.01, -0.038, 0.022]
+          radius: 0.0224
+      linker_hand_l20_left_isaac_sim/thumb_link4: 
+        - center: [0.009, -0.009, 0.003]
+          radius: 0.0133
+        - center: [0.006, -0.021, 0.007]
+          radius: 0.0133
+      world: 
+        - center: [-0.001, 0.001, 0.079]
+          radius: 0.0661
+        - center: [-0.001, 0.002, 0.045]
+          radius: 0.0625
+      link1: 
+        - center: [-0.005, -0.014, 0.001]
+          radius: 0.0626
+        - center: [-0.013, -0.006, -0.102]
+          radius: 0.0548
+        - center: [-0.007, -0.013, -0.037]
+          radius: 0.0617
+        - center: [0.018, -0.0, -0.085]
+          radius: 0.0504
+      link2: 
+        - center: [-0.0, -0.105, 0.024]
+          radius: 0.064
+        - center: [0.002, -0.104, 0.073]
+          radius: 0.0616
+        - center: [-0.013, -0.046, 0.089]
+          radius: 0.0494
+        - center: [-0.0, -0.106, -0.0]
+          radius: 0.0628
+        - center: [0.009, 0.012, 0.088]
+          radius: 0.0477
+        - center: [-0.015, 0.01, 0.088]
+          radius: 0.0483
+        - center: [0.02, -0.043, 0.088]
+          radius: 0.0477
+      link3: 
+        - center: [-0.004, 0.003, -0.071]
+          radius: 0.0589
+        - center: [0.049, 0.026, 0.0]
+          radius: 0.0589
+        - center: [0.029, 0.025, -0.024]
+          radius: 0.0534
+      link4: 
+        - center: [0.078, -0.084, 0.033]
+          radius: 0.0639
+        - center: [0.078, -0.083, 0.062]
+          radius: 0.0633
+        - center: [0.075, -0.089, -0.001]
+          radius: 0.0604
+        - center: [0.045, -0.016, 0.077]
+          radius: 0.0508
+        - center: [-0.011, 0.009, 0.077]
+          radius: 0.0496
+        - center: [0.031, -0.054, 0.087]
+          radius: 0.0413
+        - center: [-0.009, -0.014, 0.078]
+          radius: 0.0478
+      link5: 
+        - center: [0.001, 0.01, -0.151]
+          radius: 0.051
+        - center: [-0.004, 0.055, -0.005]
+          radius: 0.0505
+        - center: [-0.011, -0.015, -0.154]
+          radius: 0.0463
+        - center: [0.015, -0.009, -0.153]
+          radius: 0.0468
+        - center: [-0.004, 0.057, 0.01]
+          radius: 0.0473
+        - center: [0.013, 0.05, -0.002]
+          radius: 0.0452
+        - center: [-0.001, 0.052, -0.107]
+          radius: 0.0342
+        - center: [-0.013, 0.005, -0.152]
+          radius: 0.0494
+        - center: [0.001, 0.068, -0.078]
+          radius: 0.0336
+        - center: [0.0, 0.073, -0.049]
+          radius: 0.0331
+      link6: 
+        - center: [0.077, -0.001, 0.003]
+          radius: 0.0554
+        - center: [-0.004, -0.004, 0.021]
+          radius: 0.0529
+        - center: [0.027, -0.003, 0.018]
+          radius: 0.0505
+      link7: 
+        - center: [-0.014, 0.001, -0.019]
+          radius: 0.0326
+        - center: [0.001, 0.026, -0.018]
+          radius: 0.0326
+        - center: [0.011, -0.001, -0.019]
+          radius: 0.0326
+        - center: [-0.005, -0.021, -0.018]
+          radius: 0.0326
