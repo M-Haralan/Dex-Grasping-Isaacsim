@@ -28,7 +28,7 @@ class FingerMotionNode(Node):
         self.delta_t = 0.02
 
         self.velocity_cmd = np.array([
-            0, np.pi/2, np.pi/6, np.pi/6, 0, 0,        # thumb
+            0, np.pi/2, np.pi/6, np.pi/6, 0, 0,  # thumb
             0, 0, np.pi/6, np.pi/6, 0,           # index
             0, 0, np.pi/6, np.pi/6, 0,           # middle
             0, 0, np.pi/6, np.pi/6, 0,           # ring

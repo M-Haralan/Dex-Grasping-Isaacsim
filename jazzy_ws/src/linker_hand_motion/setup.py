@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'finger_motion_node = linker_hand_motion.finger_motion_node:main'
+            #'isaacsim_linker_controller = linker_hand_motion.isaacsim_linker_controller:main'
         ],
     },
 )
